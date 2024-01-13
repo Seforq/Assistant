@@ -1,0 +1,212 @@
+/* CSS reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../font/MontserratAlternates-Bold.ttf");
+}
+@font-face {
+  font-family: 'K2D';
+  src: url("../font/K2D-ExtraBold.ttf");
+}
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+  margin: 0;
+  line-height: 1;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007bff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --accent-color: #00a7ff;
+  }
+}
+
+body.dark-theme {
+  --background-color: #222222;
+  --text-color: #ffffff;
+  --accent-color: #00a7ff;
+}
+
+header {
+ background: #4F66BD;
+
+}
+
+.haeder_text {
+  padding: 30px 40px 41px 97px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: "K2D", sans-serif;
+  color: white;
+}
+
+.header_img {
+  padding: 27.5px 0 0 90vw;
+  position: absolute;
+  display: inline-block;
+}
+
+.header_img img {
+ cursor: pointer;
+  margin-top: 0.4vw;
+}
+
+main {
+  text-align: center;
+}
+.main_text {
+  font-size: 60px;
+  margin-top: 151px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+}
+
+.main_p {
+  font-size: 25px;
+ width: 35%;
+  height: 35%;
+  margin-left: 32vw;
+  padding: 15px;
+}
+
+.main_img  {
+cursor: pointer;
+  display: inline-block;
+  margin-top: 0.4vw;
+}
+
+.main_img:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+}
+
+.main_nebo {
+  text-align: left;
+  margin-top: -1vw;
+}
+
+.main_nebo1 {
+  text-align: right;
+  margin-top: -27vw;
+}
+
+.main_nebo2 {
+  position: absolute;
+  margin-left: 85vw;
+  margin-top: -6.8vw;
+}
+.main_nebo3 {
+  position: absolute;
+  margin-top: 11vw;
+  margin-left: -2vw;
+}
+.main_luna {
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  margin-left: -74vw;
+  margin-top: -6vw;
+}
+.main_luna:hover {
+  transform: scale(1.2);
+}
+.main_luna p {
+  display: inline-block;
+}
+
+.main_graph {
+margin-top: 15.8vw;
+}
+
+.main_line  {
+  margin-top: -20vw;
+}
+
+.main_ball {
+  margin-top: -6.8vw;
+  margin-left: -73vw;
+  text-align: center;
+}
+
+.main_ball1 {
+text-align: center;
+  margin-top: -18vw;
+  margin-right: -65vw;
+}
+
+.main_ball p {
+  padding: 17px;
+  font-size: 25px;
+}
+
+.main_ball1 p {
+  padding: 17px;
+  font-size: 25px;
+}
