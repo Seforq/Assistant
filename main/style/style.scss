@@ -50,14 +50,17 @@ q:before, q:after {
 abbr, acronym {
   border: 0;
 }
+
 @font-face {
   font-family: "Montserrat Alternates";
   src: url("../font/MontserratAlternates-Bold.ttf");
 }
+
 @font-face {
   font-family: 'K2D';
   src: url("../font/K2D-ExtraBold.ttf");
 }
+
 body {
   height: 100%;
   width: 100%;
@@ -94,7 +97,7 @@ body.dark-theme {
 }
 
 header {
- background: #4F66BD;
+  background: #4F66BD;
 
 }
 
@@ -107,20 +110,69 @@ header {
   color: white;
 }
 
+.haeder_text p {
+  display: inline-block;
+}
+
+.header_me {
+  position: absolute;
+  cursor: pointer;
+  margin-top: -50px;
+  margin-left: 65vw;
+}
+
+.header_me p {
+  display: inline-block;
+  font-size: 34px;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header_supp {
+  position: absolute;
+  cursor: pointer;
+  margin-top: -50px;
+  margin-left: 25vw;
+}
+
+.header_supp p {
+  display: inline-block;
+  font-size: 34px;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header_quest {
+  position: absolute;
+  cursor: pointer;
+  margin-top: -50px;
+  margin-left: 39.5vw;
+}
+
+.header_quest p {
+  display: inline-block;
+  font-size: 34px;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .header_img {
-  padding: 27.5px 0 0 90vw;
   position: absolute;
   display: inline-block;
 }
 
 .header_img img {
- cursor: pointer;
+  padding: 27.5px 0 0 90vw;
+  display: inline-block;
+  cursor: pointer;
   margin-top: 0.4vw;
 }
+
 
 main {
   text-align: center;
 }
+
 .main_text {
   font-size: 60px;
   margin-top: 151px;
@@ -130,21 +182,52 @@ main {
 
 .main_p {
   font-size: 25px;
- width: 35%;
+  width: 35%;
   height: 35%;
   margin-left: 32vw;
   padding: 15px;
 }
 
-.main_img  {
-cursor: pointer;
+.main_bottom {
+  cursor: pointer;
   display: inline-block;
-  margin-top: 0.4vw;
+  background-color: #667fce;
+  width: 225px;
+  height: 70px;
+  border-radius: 20px;
+  padding-left: 50px;
+  margin-top: 1.5vw;
 }
 
-.main_img:hover {
-  transform: scale(1.3);
-  transition: 0.8s;
+.main_bottom img {
+  margin-left: -14vw;
+  margin-top: 1vw;
+}
+
+.main_bottom p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: -1.60vw;
+  margin-left: -0.6vw;
+  text-align: center;
+  color: black;
+}
+
+.main_bottom a {
+  text-decoration: none;
+
+
+}
+
+.main_bottom:hover {
+  filter: brightness(150%);
+
+}
+
+.main_onbottom {
+  padding-top: 5px;
+  color: #b0b0b0;
 }
 
 .main_nebo {
@@ -162,51 +245,96 @@ cursor: pointer;
   margin-left: 85vw;
   margin-top: -6.8vw;
 }
+
 .main_nebo3 {
   position: absolute;
   margin-top: 11vw;
   margin-left: -2vw;
 }
+
+.main_nebo4 {
+  text-align: left;
+  position: absolute;
+  margin-top: -3.7vw;
+  margin-left: 5vw;
+}
+
+.main_nebo5 {
+  position: absolute;
+  text-align: left;
+  margin-top: -3.7vw;
+  margin-left: 5.5vw;
+
+}
+
 .main_luna {
+  position: relative;
   display: inline-block;
   cursor: pointer;
   text-align: left;
   margin-left: -74vw;
   margin-top: -6vw;
 }
+
 .main_luna:hover {
   transform: scale(1.2);
 }
+
 .main_luna p {
   display: inline-block;
 }
 
 .main_graph {
-margin-top: 15.8vw;
+  margin-top: 12.8vw;
 }
 
-.main_line  {
+.main_line {
   margin-top: -20vw;
 }
 
 .main_ball {
-  margin-top: -6.8vw;
+  margin-top: -8.4vw;
   margin-left: -73vw;
   text-align: center;
 }
 
 .main_ball1 {
-text-align: center;
-  margin-top: -18vw;
+  text-align: center;
+  margin-top: -19.3vw;
   margin-right: -65vw;
 }
 
 .main_ball p {
-  padding: 17px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 30px;
   font-size: 25px;
 }
 
 .main_ball1 p {
-  padding: 17px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 30px;
   font-size: 25px;
 }
+
+span[data-title] {
+  position: absolute;
+  display: inline-block;
+  color: blue;
+  text-align: center;
+  margin-left: 48vw;
+  cursor: pointer;
+}
+
+span[data-title]:hover:before {
+  content: attr(data-title);
+  position: absolute;
+  width: 100px;
+  color: black;
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  bottom: 25px;
+  left: 50px;
+}
+
+
